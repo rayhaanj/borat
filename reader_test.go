@@ -26,6 +26,10 @@ func cborDecoderHarnessExpectErr(t *testing.T, in []byte, errExpect error) {
 	}
 }
 
+func TestFail(t *testing.T) {
+	t.Error("Testing CI to see what happens...")
+}
+
 func TestReadInt(t *testing.T) {
 	testPatterns := []struct {
 		cbor  []byte
